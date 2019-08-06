@@ -8,20 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		A5426E3122E7B54A00F6ED6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E3022E7B54A00F6ED6B /* AppDelegate.swift */; };
-		A5426E3322E7B54A00F6ED6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E3222E7B54A00F6ED6B /* ViewController.swift */; };
-		A5426E3622E7B54A00F6ED6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5426E3422E7B54A00F6ED6B /* Main.storyboard */; };
 		A5426E3822E7B54C00F6ED6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5426E3722E7B54C00F6ED6B /* Assets.xcassets */; };
 		A5426E3B22E7B54C00F6ED6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5426E3922E7B54C00F6ED6B /* LaunchScreen.storyboard */; };
+		A5426E4722E7B6B300F6ED6B /* ShelfListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E4622E7B6B300F6ED6B /* ShelfListView.swift */; };
+		A5426E4C22E7B72500F6ED6B /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E4A22E7B72500F6ED6B /* CodableView.swift */; };
+		A5426E4D22E7B72500F6ED6B /* NSLayoutConstraint+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E4B22E7B72500F6ED6B /* NSLayoutConstraint+UIView.swift */; };
+		A5426E5122E7B7EB00F6ED6B /* ShelfListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5022E7B7EB00F6ED6B /* ShelfListViewController.swift */; };
+		A5426E5422E7B90100F6ED6B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5322E7B90100F6ED6B /* Product.swift */; };
+		A5426E5622E7BC9000F6ED6B /* AppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5522E7BC9000F6ED6B /* AppCordinator.swift */; };
+		A5426E5822E7BC9E00F6ED6B /* ShelfCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5722E7BC9E00F6ED6B /* ShelfCoordinator.swift */; };
+		A5426E5A22E7C95500F6ED6B /* ShelfListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5922E7C95500F6ED6B /* ShelfListDataSource.swift */; };
+		A5426E5C22E7CBFA00F6ED6B /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5B22E7CBFA00F6ED6B /* UITableView+Reusable.swift */; };
+		A5426E5E22E7CC1100F6ED6B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5D22E7CC1100F6ED6B /* Reusable.swift */; };
+		A5426E6022E7CCFB00F6ED6B /* ShelfListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5F22E7CCFB00F6ED6B /* ShelfListCell.swift */; };
+		A5426E6222E7D32500F6ED6B /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6122E7D32500F6ED6B /* ProductDetailViewController.swift */; };
+		A5426E6422E7D3D700F6ED6B /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6322E7D3D700F6ED6B /* ProductDetailView.swift */; };
+		A5426E6722E8DA9D00F6ED6B /* TwoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6622E8DA9D00F6ED6B /* TwoTextView.swift */; };
+		A5426E6922E903D500F6ED6B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6822E903D500F6ED6B /* CardView.swift */; };
+		A5426E6B22E9113100F6ED6B /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6A22E9113100F6ED6B /* SeparatorView.swift */; };
+		A5426E6D22E9F30F00F6ED6B /* HeaderRelevantInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6C22E9F30F00F6ED6B /* HeaderRelevantInfoView.swift */; };
+		A5426E7122EA09D600F6ED6B /* InfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E7022EA09D600F6ED6B /* InfoListView.swift */; };
+		A5426E7322EA239200F6ED6B /* QuestionAnwserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E7222EA239200F6ED6B /* QuestionAnwserView.swift */; };
+		A5426E7522EA25A000F6ED6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E7422EA25A000F6ED6B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5426E2D22E7B54A00F6ED6B /* DOJOViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DOJOViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5426E3022E7B54A00F6ED6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5426E3222E7B54A00F6ED6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A5426E3522E7B54A00F6ED6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5426E3722E7B54C00F6ED6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5426E3A22E7B54C00F6ED6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5426E3C22E7B54C00F6ED6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5426E4622E7B6B300F6ED6B /* ShelfListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListView.swift; sourceTree = "<group>"; };
+		A5426E4A22E7B72500F6ED6B /* CodableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
+		A5426E4B22E7B72500F6ED6B /* NSLayoutConstraint+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+UIView.swift"; sourceTree = "<group>"; };
+		A5426E5022E7B7EB00F6ED6B /* ShelfListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListViewController.swift; sourceTree = "<group>"; };
+		A5426E5322E7B90100F6ED6B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A5426E5522E7BC9000F6ED6B /* AppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinator.swift; sourceTree = "<group>"; };
+		A5426E5722E7BC9E00F6ED6B /* ShelfCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfCoordinator.swift; sourceTree = "<group>"; };
+		A5426E5922E7C95500F6ED6B /* ShelfListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListDataSource.swift; sourceTree = "<group>"; };
+		A5426E5B22E7CBFA00F6ED6B /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		A5426E5D22E7CC1100F6ED6B /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		A5426E5F22E7CCFB00F6ED6B /* ShelfListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListCell.swift; sourceTree = "<group>"; };
+		A5426E6122E7D32500F6ED6B /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		A5426E6322E7D3D700F6ED6B /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		A5426E6622E8DA9D00F6ED6B /* TwoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTextView.swift; sourceTree = "<group>"; };
+		A5426E6822E903D500F6ED6B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A5426E6A22E9113100F6ED6B /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		A5426E6C22E9F30F00F6ED6B /* HeaderRelevantInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderRelevantInfoView.swift; sourceTree = "<group>"; };
+		A5426E7022EA09D600F6ED6B /* InfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
+		A5426E7222EA239200F6ED6B /* QuestionAnwserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnwserView.swift; sourceTree = "<group>"; };
+		A5426E7422EA25A000F6ED6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +91,111 @@
 			isa = PBXGroup;
 			children = (
 				A5426E3022E7B54A00F6ED6B /* AppDelegate.swift */,
-				A5426E3222E7B54A00F6ED6B /* ViewController.swift */,
-				A5426E3422E7B54A00F6ED6B /* Main.storyboard */,
-				A5426E3722E7B54C00F6ED6B /* Assets.xcassets */,
-				A5426E3922E7B54C00F6ED6B /* LaunchScreen.storyboard */,
-				A5426E3C22E7B54C00F6ED6B /* Info.plist */,
+				A5426E5522E7BC9000F6ED6B /* AppCordinator.swift */,
+				A5426E4422E7B5C000F6ED6B /* Features */,
+				A5426E5222E7B8EC00F6ED6B /* Models */,
+				A5426E4822E7B6CD00F6ED6B /* Utils */,
+				A5426E4222E7B59900F6ED6B /* Resources */,
+				A5426E4322E7B5AB00F6ED6B /* Supporting FIles */,
 			);
 			path = DOJOViewCode;
+			sourceTree = "<group>";
+		};
+		A5426E4222E7B59900F6ED6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E3722E7B54C00F6ED6B /* Assets.xcassets */,
+				A5426E3922E7B54C00F6ED6B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5426E4322E7B5AB00F6ED6B /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E3C22E7B54C00F6ED6B /* Info.plist */,
+			);
+			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		A5426E4422E7B5C000F6ED6B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E4522E7B61100F6ED6B /* Shelf */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A5426E4522E7B61100F6ED6B /* Shelf */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E5722E7BC9E00F6ED6B /* ShelfCoordinator.swift */,
+				A5426E4F22E7B7CF00F6ED6B /* Detail */,
+				A5426E4E22E7B79800F6ED6B /* List */,
+			);
+			path = Shelf;
+			sourceTree = "<group>";
+		};
+		A5426E4822E7B6CD00F6ED6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E7422EA25A000F6ED6B /* Constants.swift */,
+				A5426E6522E8DA8A00F6ED6B /* CustomViews */,
+				A5426E4922E7B6D300F6ED6B /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A5426E4922E7B6D300F6ED6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E4A22E7B72500F6ED6B /* CodableView.swift */,
+				A5426E4B22E7B72500F6ED6B /* NSLayoutConstraint+UIView.swift */,
+				A5426E5D22E7CC1100F6ED6B /* Reusable.swift */,
+				A5426E5B22E7CBFA00F6ED6B /* UITableView+Reusable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5426E4E22E7B79800F6ED6B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E5F22E7CCFB00F6ED6B /* ShelfListCell.swift */,
+				A5426E5922E7C95500F6ED6B /* ShelfListDataSource.swift */,
+				A5426E4622E7B6B300F6ED6B /* ShelfListView.swift */,
+				A5426E5022E7B7EB00F6ED6B /* ShelfListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A5426E4F22E7B7CF00F6ED6B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E6322E7D3D700F6ED6B /* ProductDetailView.swift */,
+				A5426E6122E7D32500F6ED6B /* ProductDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A5426E5222E7B8EC00F6ED6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E5322E7B90100F6ED6B /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5426E6522E8DA8A00F6ED6B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E6622E8DA9D00F6ED6B /* TwoTextView.swift */,
+				A5426E6822E903D500F6ED6B /* CardView.swift */,
+				A5426E6A22E9113100F6ED6B /* SeparatorView.swift */,
+				A5426E6C22E9F30F00F6ED6B /* HeaderRelevantInfoView.swift */,
+				A5426E7022EA09D600F6ED6B /* InfoListView.swift */,
+				A5426E7222EA239200F6ED6B /* QuestionAnwserView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +258,6 @@
 			files = (
 				A5426E3B22E7B54C00F6ED6B /* LaunchScreen.storyboard in Resources */,
 				A5426E3822E7B54C00F6ED6B /* Assets.xcassets in Resources */,
-				A5426E3622E7B54A00F6ED6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +268,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5426E3322E7B54A00F6ED6B /* ViewController.swift in Sources */,
+				A5426E5C22E7CBFA00F6ED6B /* UITableView+Reusable.swift in Sources */,
+				A5426E6422E7D3D700F6ED6B /* ProductDetailView.swift in Sources */,
+				A5426E5E22E7CC1100F6ED6B /* Reusable.swift in Sources */,
+				A5426E5122E7B7EB00F6ED6B /* ShelfListViewController.swift in Sources */,
+				A5426E6B22E9113100F6ED6B /* SeparatorView.swift in Sources */,
+				A5426E4722E7B6B300F6ED6B /* ShelfListView.swift in Sources */,
+				A5426E7122EA09D600F6ED6B /* InfoListView.swift in Sources */,
+				A5426E6222E7D32500F6ED6B /* ProductDetailViewController.swift in Sources */,
+				A5426E6022E7CCFB00F6ED6B /* ShelfListCell.swift in Sources */,
+				A5426E5A22E7C95500F6ED6B /* ShelfListDataSource.swift in Sources */,
+				A5426E4C22E7B72500F6ED6B /* CodableView.swift in Sources */,
+				A5426E7522EA25A000F6ED6B /* Constants.swift in Sources */,
+				A5426E4D22E7B72500F6ED6B /* NSLayoutConstraint+UIView.swift in Sources */,
 				A5426E3122E7B54A00F6ED6B /* AppDelegate.swift in Sources */,
+				A5426E5422E7B90100F6ED6B /* Product.swift in Sources */,
+				A5426E6722E8DA9D00F6ED6B /* TwoTextView.swift in Sources */,
+				A5426E5622E7BC9000F6ED6B /* AppCordinator.swift in Sources */,
+				A5426E6922E903D500F6ED6B /* CardView.swift in Sources */,
+				A5426E6D22E9F30F00F6ED6B /* HeaderRelevantInfoView.swift in Sources */,
+				A5426E7322EA239200F6ED6B /* QuestionAnwserView.swift in Sources */,
+				A5426E5822E7BC9E00F6ED6B /* ShelfCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A5426E3422E7B54A00F6ED6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5426E3522E7B54A00F6ED6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A5426E3922E7B54C00F6ED6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +427,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DOJOViewCode/Info.plist;
+				DEVELOPMENT_TEAM = C5S742N4J4;
+				INFOPLIST_FILE = "$(SRCROOT)/DOJOViewCode/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rm.DOJOViewCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,7 +445,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DOJOViewCode/Info.plist;
+				DEVELOPMENT_TEAM = C5S742N4J4;
+				INFOPLIST_FILE = "$(SRCROOT)/DOJOViewCode/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rm.DOJOViewCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
