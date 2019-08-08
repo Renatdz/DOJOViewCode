@@ -9,16 +9,16 @@
 import UIKit
 
 protocol ShelfListDataSourceDelegate: AnyObject {
-    func didSelect(product: Product)
+    func didSelect(viewModel: ShelfListCellViewModel)
 }
 
 final class ShelfListDataSource: NSObject {
     
-    private var products: [Product] = []
+    private var viewModels: [ShelfListCellViewModel] = []
     private weak var delegate: ShelfListDataSourceDelegate?
     
-    func set(_ products: [Product]) {
-        self.products.append(contentsOf: products)
+    func set(_ viewModels: [ShelfListCellViewModel]) {
+        self.viewModels.append(contentsOf: viewModels)
     }
     
     func set(_ delegate: ShelfListDataSourceDelegate?) {
@@ -26,27 +26,27 @@ final class ShelfListDataSource: NSObject {
     }
     
     func clear() {
-        products.removeAll()
+        viewModels.removeAll()
     }
 }
 
 extension ShelfListDataSource: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+        return viewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ShelfListCell = tableView.dequeueReusableCell(for: indexPath)
         
-        let product = products[indexPath.row]
-        cell.configure(with: product)
+        let viewModel = viewModels[indexPath.row]
+        cell.configure(with: viewModel)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let product = products[indexPath.row]
-        delegate?.didSelect(product: product)
+        let viewModel = viewModels[indexPath.row]
+        delegate?.didSelect(viewModel: viewModel)
         
         tableView.deselectRow(at: indexPath, animated: true)
     }

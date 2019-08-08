@@ -11,10 +11,10 @@ struct Product {
     let type: String
     let rentability: String
     let tax: String
-    let minimumValue: String
+    let minimumValue: Double
     let maturityDate: String
-    let liquidity: String
-    let maturityDateInDays: String
+    let liquidity: Int
+    let maturityDateInDays: Int
     let iof: String
 }
 
@@ -24,10 +24,10 @@ extension Product {
                        type: "",
                        rentability: "",
                        tax: "",
-                       minimumValue: "",
+                       minimumValue: 0.0,
                        maturityDate: "",
-                       liquidity: "",
-                       maturityDateInDays: "",
+                       liquidity: 0,
+                       maturityDateInDays: 0,
                        iof: "")
     }
 }
@@ -39,46 +39,46 @@ struct ProductGenerator {
                     type: "Selic 2025",
                     rentability: "SELIC + 0.02%",
                     tax: "22.5% a 15% de IR",
-                    minimumValue: "R$ 102,18",
-                    maturityDate: "01/03/2025",
-                    liquidity: "D+1",
-                    maturityDateInDays: "1988 dias",
+                    minimumValue: 102.18,
+                    maturityDate: "01-03-2025",
+                    liquidity: 1,
+                    maturityDateInDays: 1560,
                     iof: "Isento após 30 dias"),
             Product(name: "Tesouro Direto",
                     type: "Prefixado C/ juros Semestral 2029",
                     rentability: "7.18% a.a.",
                     tax: "22.5% a 15% de IR",
-                    minimumValue: "R$ 35,74",
-                    maturityDate: "01/01/2029",
-                    liquidity: "D+1",
-                    maturityDateInDays: "1988 dias",
+                    minimumValue: 35.74,
+                    maturityDate: "01-01-2029",
+                    liquidity: 2,
+                    maturityDateInDays: 1888,
                     iof: "Isento após 30 dias"),
             Product(name: "Tesouro Direto",
                     type: "Prefixado 2025",
                     rentability: "5.85% a.a.",
                     tax: "22.5% a 15% de IR",
-                    minimumValue: "R$ 34,81",
-                    maturityDate: "01/03/2022",
-                    liquidity: "D+1",
-                    maturityDateInDays: "1988 dias",
+                    minimumValue: 34.81,
+                    maturityDate: "01-03-2022",
+                    liquidity: 1,
+                    maturityDateInDays: 1200,
                     iof: "Isento após 30 dias"),
             Product(name: "Tesouro Direto",
                     type: "IPCA+ 2050",
                     rentability: "IPCA + 3.66%",
                     tax: "22.5% a 15% de IR",
-                    minimumValue: "R$ 46,92",
-                    maturityDate: "01/03/2050",
-                    liquidity: "D+1",
-                    maturityDateInDays: "1988 dias",
+                    minimumValue: 46.92,
+                    maturityDate: "01-03-2050",
+                    liquidity: 3,
+                    maturityDateInDays: 2000,
                     iof: "Isento após 30 dias"),
             Product(name: "Tesouro Direto",
                     type: "IPCA+ 2035",
                     rentability: "IPCA + 3.65%",
                     tax: "22.5% a 15% de IR",
-                    minimumValue: "R$ 36,73",
+                    minimumValue: 36.73,
                     maturityDate: "15/05/2035",
-                    liquidity: "D+1",
-                    maturityDateInDays: "1988 dias",
+                    liquidity: 1,
+                    maturityDateInDays: 1988,
                     iof: "Isento após 30 dias")
         ]
     }

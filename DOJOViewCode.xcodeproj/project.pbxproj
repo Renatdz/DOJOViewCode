@@ -21,8 +21,6 @@
 		A5426E5C22E7CBFA00F6ED6B /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5B22E7CBFA00F6ED6B /* UITableView+Reusable.swift */; };
 		A5426E5E22E7CC1100F6ED6B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5D22E7CC1100F6ED6B /* Reusable.swift */; };
 		A5426E6022E7CCFB00F6ED6B /* ShelfListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E5F22E7CCFB00F6ED6B /* ShelfListCell.swift */; };
-		A5426E6222E7D32500F6ED6B /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6122E7D32500F6ED6B /* ProductDetailViewController.swift */; };
-		A5426E6422E7D3D700F6ED6B /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6322E7D3D700F6ED6B /* ProductDetailView.swift */; };
 		A5426E6722E8DA9D00F6ED6B /* TwoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6622E8DA9D00F6ED6B /* TwoTextView.swift */; };
 		A5426E6922E903D500F6ED6B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6822E903D500F6ED6B /* CardView.swift */; };
 		A5426E6B22E9113100F6ED6B /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E6A22E9113100F6ED6B /* SeparatorView.swift */; };
@@ -30,6 +28,12 @@
 		A5426E7122EA09D600F6ED6B /* InfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E7022EA09D600F6ED6B /* InfoListView.swift */; };
 		A5426E7322EA239200F6ED6B /* QuestionAnwserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E7222EA239200F6ED6B /* QuestionAnwserView.swift */; };
 		A5426E7522EA25A000F6ED6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5426E7422EA25A000F6ED6B /* Constants.swift */; };
+		A58ED10422FA1FD400AA0525 /* ShelfListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ED10322FA1FD400AA0525 /* ShelfListViewModel.swift */; };
+		A58ED10622FA200200AA0525 /* ShelfListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ED10522FA200200AA0525 /* ShelfListCellViewModel.swift */; };
+		A58ED10922FA27E300AA0525 /* ShelfListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ED10822FA27E300AA0525 /* ShelfListRepository.swift */; };
+		A58ED10D22FB689900AA0525 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ED10B22FB689900AA0525 /* ProductDetailViewController.swift */; };
+		A58ED10E22FB689900AA0525 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ED10C22FB689900AA0525 /* ProductDetailView.swift */; };
+		A58ED11022FC59E100AA0525 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58ED10F22FC59E100AA0525 /* ProductDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +53,6 @@
 		A5426E5B22E7CBFA00F6ED6B /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		A5426E5D22E7CC1100F6ED6B /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		A5426E5F22E7CCFB00F6ED6B /* ShelfListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListCell.swift; sourceTree = "<group>"; };
-		A5426E6122E7D32500F6ED6B /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
-		A5426E6322E7D3D700F6ED6B /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		A5426E6622E8DA9D00F6ED6B /* TwoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTextView.swift; sourceTree = "<group>"; };
 		A5426E6822E903D500F6ED6B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A5426E6A22E9113100F6ED6B /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,12 @@
 		A5426E7022EA09D600F6ED6B /* InfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
 		A5426E7222EA239200F6ED6B /* QuestionAnwserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnwserView.swift; sourceTree = "<group>"; };
 		A5426E7422EA25A000F6ED6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A58ED10322FA1FD400AA0525 /* ShelfListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListViewModel.swift; sourceTree = "<group>"; };
+		A58ED10522FA200200AA0525 /* ShelfListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListCellViewModel.swift; sourceTree = "<group>"; };
+		A58ED10822FA27E300AA0525 /* ShelfListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfListRepository.swift; sourceTree = "<group>"; };
+		A58ED10B22FB689900AA0525 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		A58ED10C22FB689900AA0525 /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		A58ED10F22FC59E100AA0525 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				A5426E5722E7BC9E00F6ED6B /* ShelfCoordinator.swift */,
-				A5426E4F22E7B7CF00F6ED6B /* Detail */,
 				A5426E4E22E7B79800F6ED6B /* List */,
+				A58ED10A22FB686100AA0525 /* Detail */,
 			);
 			path = Shelf;
 			sourceTree = "<group>";
@@ -160,21 +168,13 @@
 		A5426E4E22E7B79800F6ED6B /* List */ = {
 			isa = PBXGroup;
 			children = (
-				A5426E5F22E7CCFB00F6ED6B /* ShelfListCell.swift */,
-				A5426E5922E7C95500F6ED6B /* ShelfListDataSource.swift */,
+				A58ED10722FA24E000AA0525 /* DataSource */,
 				A5426E4622E7B6B300F6ED6B /* ShelfListView.swift */,
 				A5426E5022E7B7EB00F6ED6B /* ShelfListViewController.swift */,
+				A58ED10322FA1FD400AA0525 /* ShelfListViewModel.swift */,
+				A58ED10822FA27E300AA0525 /* ShelfListRepository.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		A5426E4F22E7B7CF00F6ED6B /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				A5426E6322E7D3D700F6ED6B /* ProductDetailView.swift */,
-				A5426E6122E7D32500F6ED6B /* ProductDetailViewController.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		A5426E5222E7B8EC00F6ED6B /* Models */ = {
@@ -196,6 +196,26 @@
 				A5426E7222EA239200F6ED6B /* QuestionAnwserView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		A58ED10722FA24E000AA0525 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A5426E5F22E7CCFB00F6ED6B /* ShelfListCell.swift */,
+				A58ED10522FA200200AA0525 /* ShelfListCellViewModel.swift */,
+				A5426E5922E7C95500F6ED6B /* ShelfListDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A58ED10A22FB686100AA0525 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A58ED10C22FB689900AA0525 /* ProductDetailView.swift */,
+				A58ED10B22FB689900AA0525 /* ProductDetailViewController.swift */,
+				A58ED10F22FC59E100AA0525 /* ProductDetailViewModel.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,25 +289,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5426E5C22E7CBFA00F6ED6B /* UITableView+Reusable.swift in Sources */,
-				A5426E6422E7D3D700F6ED6B /* ProductDetailView.swift in Sources */,
+				A58ED10922FA27E300AA0525 /* ShelfListRepository.swift in Sources */,
 				A5426E5E22E7CC1100F6ED6B /* Reusable.swift in Sources */,
 				A5426E5122E7B7EB00F6ED6B /* ShelfListViewController.swift in Sources */,
 				A5426E6B22E9113100F6ED6B /* SeparatorView.swift in Sources */,
 				A5426E4722E7B6B300F6ED6B /* ShelfListView.swift in Sources */,
 				A5426E7122EA09D600F6ED6B /* InfoListView.swift in Sources */,
-				A5426E6222E7D32500F6ED6B /* ProductDetailViewController.swift in Sources */,
+				A58ED10422FA1FD400AA0525 /* ShelfListViewModel.swift in Sources */,
+				A58ED10622FA200200AA0525 /* ShelfListCellViewModel.swift in Sources */,
 				A5426E6022E7CCFB00F6ED6B /* ShelfListCell.swift in Sources */,
 				A5426E5A22E7C95500F6ED6B /* ShelfListDataSource.swift in Sources */,
 				A5426E4C22E7B72500F6ED6B /* CodableView.swift in Sources */,
 				A5426E7522EA25A000F6ED6B /* Constants.swift in Sources */,
 				A5426E4D22E7B72500F6ED6B /* NSLayoutConstraint+UIView.swift in Sources */,
 				A5426E3122E7B54A00F6ED6B /* AppDelegate.swift in Sources */,
+				A58ED10D22FB689900AA0525 /* ProductDetailViewController.swift in Sources */,
 				A5426E5422E7B90100F6ED6B /* Product.swift in Sources */,
+				A58ED10E22FB689900AA0525 /* ProductDetailView.swift in Sources */,
 				A5426E6722E8DA9D00F6ED6B /* TwoTextView.swift in Sources */,
 				A5426E5622E7BC9000F6ED6B /* AppCordinator.swift in Sources */,
 				A5426E6922E903D500F6ED6B /* CardView.swift in Sources */,
 				A5426E6D22E9F30F00F6ED6B /* HeaderRelevantInfoView.swift in Sources */,
 				A5426E7322EA239200F6ED6B /* QuestionAnwserView.swift in Sources */,
+				A58ED11022FC59E100AA0525 /* ProductDetailViewModel.swift in Sources */,
 				A5426E5822E7BC9E00F6ED6B /* ShelfCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

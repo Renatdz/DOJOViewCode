@@ -21,8 +21,8 @@ final class ProductDetailView: UIView {
         return stackView
     }()
     
-    private lazy var headerView = HeaderRelevantInfoView(text: product.type,
-                                                         relevantText: product.rentability)
+    private lazy var headerView = HeaderRelevantInfoView(text: viewModel.productType,
+                                                         relevantText: viewModel.productRentability)
     
     private lazy var infoListView = InfoListView(infoValues: infoListValues)
     
@@ -33,17 +33,17 @@ final class ProductDetailView: UIView {
     
     // MARK: - Properties
     
-    private let product: Product
+    private let viewModel: ProductDetailViewModel
     
     private lazy var infoListValues = [
-        (info: "Investimento mínimo", value: product.minimumValue),
-        (info: "Rentabilidade", value: product.rentability),
-        (info: "Liquidez", value: product.liquidity),
-        (info: "Data de vencimento", value: product.maturityDate),
-        (info: "Vence em", value: product.maturityDateInDays),
+        (info: "Investimento mínimo", value: viewModel.productMinimumValue),
+        (info: "Rentabilidade", value: viewModel.productRentability),
+        (info: "Data de vencimento", value: viewModel.productMaturityDate),
+        (info: "Vencimento em dias", value: viewModel.productMaturityDateInDays),
         (info: "Pagamento de juros", value: "-"),
-        (info: "IR sobre o rendimento", value: product.tax),
-        (info: "IOF sobre o rendimento", value: product.iof)
+        (info: "IR sobre o rendimento", value: viewModel.productTax),
+        (info: "IOF sobre o rendimento", value: viewModel.productIof),
+        (info: "Resgate", value: viewModel.productLiquidity)
     ]
     
     private let infoIRListValues = [
@@ -55,8 +55,8 @@ final class ProductDetailView: UIView {
     
     // MARK: - Initialization
     
-    init(product: Product, frame: CGRect = .zero) {
-        self.product = product
+    init(viewModel: ProductDetailViewModel, frame: CGRect = .zero) {
+        self.viewModel = viewModel
         
         super.init(frame: frame)
         

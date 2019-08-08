@@ -12,19 +12,19 @@ final class ShelfListCell: UITableViewCell {
     
     // MARK: - Outlets
     
-    private lazy var cardView = CardView(product: product)
+    private lazy var cardView = CardView(viewModel: viewModel)
     
     // MARK: - Outlets
     
-    private var product: Product = Product.empty()
+    private var viewModel: ShelfListCellViewModel = ShelfListCellViewModel.empty()
 }
 
 // MARK: - Binding
 
 extension ShelfListCell {
     
-    func configure(with product: Product) {
-        self.product = product
+    func configure(with viewModel: ShelfListCellViewModel) {
+        self.viewModel = viewModel
         
         buildCodableView()
     }

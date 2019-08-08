@@ -27,7 +27,6 @@ final class ShelfListView: UIView {
     
     private var listDataSource: ShelfListDataSource
     
-    
     // MARK: - Initialization
     
     init(dataSource: ShelfListDataSource = ShelfListDataSource(),
@@ -42,8 +41,8 @@ final class ShelfListView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(_ listDataSourceDelegate: ShelfListDataSourceDelegate?) {
-        listDataSource.set(listDataSourceDelegate)
+    func set(dataSourceDelegate: ShelfListDataSourceDelegate?) {
+        listDataSource.set(dataSourceDelegate)
     }
 }
 
@@ -51,8 +50,8 @@ final class ShelfListView: UIView {
 
 extension ShelfListView {
     
-    func updateList(products: [Product]) {
-        listDataSource.set(products)
+    func updateList(viewModels: [ShelfListCellViewModel]) {
+        listDataSource.set(viewModels)
         tableView.reloadData()
     }
 }

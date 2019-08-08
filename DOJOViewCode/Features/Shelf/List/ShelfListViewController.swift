@@ -8,22 +8,20 @@
 
 import UIKit
 
-protocol ShelfListViewControllerDelegate: AnyObject {
-    func presentDetail(with product: Product)
-}
-
 final class ShelfListViewController: UIViewController {
     
     // MARK: - Properties
     
     private let shelfListView: ShelfListView = ShelfListView()
-    private let products: [Product] = ProductGenerator.products()
-    private weak var delegate: ShelfListViewControllerDelegate?
+    
+    private let listViewModel: ShelfListViewModel
+    private weak var coordinator: ShelfCoordinatorDelegate?
     
     // MARK: - Initialization
     
-    init(delegate: ShelfListViewControllerDelegate?) {
-        self.delegate = delegate
+    init(viewModel: ShelfListViewModel, coordinatorDelegate: ShelfCoordinatorDelegate?) {
+        listViewModel = viewModel
+        coordinator = coordinatorDelegate
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -40,15 +38,28 @@ extension ShelfListViewController {
     
     override func loadView() {
         self.view = shelfListView
-        shelfListView.set(self)
+        shelfListView.set(dataSourceDelegate: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Product Shelf"
+        title = "Product Shelf"
         
-        shelfListView.updateList(products: products)
+        fetchProducts()
+    }
+}
+
+extension ShelfListViewController {
+    
+    func fetchProducts() {
+        listViewModel.fetchProducts(success: { [weak self] cellViewModels in
+            
+            self?.shelfListView.updateList(viewModels: cellViewModels)
+            
+        }, failure: { message in
+            // present alert
+        })
     }
 }
 
@@ -56,7 +67,7 @@ extension ShelfListViewController {
 
 extension ShelfListViewController: ShelfListDataSourceDelegate {
     
-    func didSelect(product: Product) {
-        delegate?.presentDetail(with: product)
+    func didSelect(viewModel: ShelfListCellViewModel) {
+        coordinator?.presentDetail(with: viewModel.product)
     }
 }

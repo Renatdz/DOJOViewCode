@@ -12,14 +12,14 @@ final class ProductDetailViewController: UIViewController {
     
     // MARK: - Properties
     
+    private let productDetailViewModel: ProductDetailViewModel
     private let productDetailView: ProductDetailView
-    private let product: Product
     
     // MARK: - Initialization
     
-    init(product: Product) {
-        self.product = product
-        productDetailView = ProductDetailView(product: product)
+    init(viewModel: ProductDetailViewModel) {
+        productDetailViewModel = viewModel
+        productDetailView = ProductDetailView(viewModel: productDetailViewModel)
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -40,7 +40,7 @@ extension ProductDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = product.name
+        self.title = productDetailViewModel.productName
     }
 }
 

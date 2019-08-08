@@ -30,29 +30,29 @@ final class CardView: UIView {
         return stackView
     }()
     
-    private lazy var productInfo = TwoTextView(texts: (product.name, product.rentability),
+    private lazy var productInfo = TwoTextView(texts: (viewModel.productName, viewModel.productRentability),
                                                style: .bold)
     
-    private lazy var typeInfo = TwoTextView(texts: (product.type, product.tax))
+    private lazy var typeInfo = TwoTextView(texts: (viewModel.productType, viewModel.productTax))
     
     private let separator = SeparatorView(backgroundColor: .lightGray)
     
-    private lazy var valueInfo = TwoTextView(texts: ("Valor mínimo", product.minimumValue),
+    private lazy var valueInfo = TwoTextView(texts: ("Valor mínimo", viewModel.productMinimumValue),
                                              style: .rightBold,
                                              align: .borderLeft)
     
-    private lazy var dateInfo = TwoTextView(texts: ("Vence em", product.maturityDate),
+    private lazy var dateInfo = TwoTextView(texts: ("Vence em", viewModel.productMaturityDate),
                                             style: .rightBold,
                                             align: .borderLeft)
     
     // MARK - Properties
     
-    private let product: Product
+    private let viewModel: ShelfListCellViewModel
     
     // MARK: - Initialization
     
-    init(product: Product) {
-        self.product = product
+    init(viewModel: ShelfListCellViewModel) {
+        self.viewModel = viewModel
         
         super.init(frame: .zero)
         
